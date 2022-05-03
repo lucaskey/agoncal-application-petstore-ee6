@@ -10,9 +10,6 @@ import javax.xml.bind.annotation.XmlTransient;
 import java.util.ArrayList;
 import java.util.List;
 
-import lombok.Getter;
-import lombok.Setter;
-
 /**
  * @author Antonio Goncalves
  *         http://www.antoniogoncalves.org
@@ -27,8 +24,6 @@ import lombok.Setter;
         @NamedQuery(name = Category.FIND_ALL, query = "SELECT c FROM Category c")
 })
 @XmlRootElement
-@Getter
-@Setter
 public class Category {
 
     // ======================================
