@@ -12,8 +12,6 @@ import javax.validation.constraints.Size;
  */
 
 @Embeddable
-@Getter 
-@Setter
 public class Address {
 
     // ======================================
@@ -46,6 +44,8 @@ public class Address {
     public Address() {
     }
 
+    @Getter 
+    @Setter
     public Address(String street1, String city, String zipcode, String country) {
         this.street1 = street1;
         this.city = city;
