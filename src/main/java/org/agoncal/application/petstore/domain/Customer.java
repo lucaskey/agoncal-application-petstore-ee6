@@ -16,6 +16,7 @@ import java.util.GregorianCalendar;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.NoArgsConstructor;
 
 /**
  * @author Antonio Goncalves
@@ -32,6 +33,7 @@ import lombok.Setter;
 @XmlRootElement
 @Getter
 @Setter
+@NoArgsConstructor
 public class Customer implements Serializable {
 
     // ======================================
@@ -80,8 +82,6 @@ public class Customer implements Serializable {
     // =            Constructors            =
     // ======================================
 
-    public Customer() {
-    }
 
     public Customer(String firstname, String lastname, String login, String password, String email, Address address) {
         this.firstname = firstname;
