@@ -7,6 +7,7 @@ import java.util.List;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.NoArgsConstructor;
 
 /**
  * @author Antonio Goncalves
@@ -22,6 +23,7 @@ import lombok.Setter;
 })
 @Getter
 @Setter
+@NoArgsConstructor
 public class Order {
 
     // ======================================
@@ -57,8 +59,6 @@ public class Order {
     // =            Constructors            =
     // ======================================
 
-    public Order() {
-    }
 
     public Order(Customer customer, CreditCard creditCard, Address deliveryAddress) {
         this.customer = customer;
