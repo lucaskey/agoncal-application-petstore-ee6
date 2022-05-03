@@ -7,6 +7,7 @@ import javax.validation.constraints.Size;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.NoArgsConstructor;
 
 /**
  * @author Antonio Goncalves
@@ -17,6 +18,7 @@ import lombok.Setter;
 @Embeddable
 @Getter
 @Setter
+@NoArgsConstructor
 public class Address {
 
     // ======================================
@@ -46,8 +48,6 @@ public class Address {
     // =            Constructors            =
     // ======================================
 
-    public Address() {
-    }
 
     @Getter 
     @Setter
